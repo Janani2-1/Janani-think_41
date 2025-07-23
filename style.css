@@ -1,0 +1,43 @@
+body {
+  font-family: monospace;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+.editor-wrapper {
+  display: flex;
+  border: 1px solid #ccc;
+  height: 400px;
+  overflow: hidden;
+  background-color: white;
+}
+
+.line-numbers {
+  width: 50px;
+  background-color: #eee;
+  padding: 10px;
+  text-align: right;
+  user-select: none;
+  overflow-y: scroll;
+  line-height: 20px;
+}
+
+textarea {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  outline: none;
+  font-family: monospace;
+  font-size: 14px;
+  line-height: 20px;
+  resize: none;
+  overflow-y: scroll;
+}
+
+.controls {
+  margin-top: 10px;
+}
+
+.highlight {
+  background-color: yellow;
+}
