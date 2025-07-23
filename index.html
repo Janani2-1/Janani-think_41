@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Text Editor with Line Numbers and Jump</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h2>Text Editor with Line Numbers</h2>
+
+  <div class="editor-wrapper">
+    <div id="lineNumbers" class="line-numbers"></div>
+    <textarea id="textEditor" onscroll="syncScroll()" oninput="updateLineNumbers()"></textarea>
+  </div>
+
+  <div class="controls">
+    <input type="number" id="jumpInput" placeholder="Line Number" min="1" />
+    <button onclick="jumpToLine()">Jump</button>
+    <input type="file" id="fileInput" />
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
